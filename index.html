@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario con Validaciones</title>
+        <style>
+           .error{
+            color: red;
+           }
+        </style>
+        <script src="validaciones.js"></script>
+    </head>
+    <body>
+        <form id="formulario" onsubmit="validarFormulario()">
+            <div>
+                <label for="id">ID:</label>
+                <input type="text" id="id" onblur="comprobarCampo(this)">
+                <div id="div_error_id" class="error"></div>
+            </div>
+            <button id="submit_bottom" type="submit">Enviar</button>
+        </form>
+    </body>
+
+
+
+</html>
