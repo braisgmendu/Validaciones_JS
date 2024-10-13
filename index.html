@@ -3,9 +3,11 @@
     <head>
         <title>Formulario con Validaciones</title>
         <style>
-           .error{
-            color: red;
-           }
+            .error{
+                color: red;
+                border: 2px;
+                border-color: black;
+            }
         </style>
         <script src="validaciones.js"></script>
     </head>
@@ -15,6 +17,26 @@
                 <label for="id">ID:</label>
                 <input type="text" id="id" onblur="comprobarCampo(this)">
                 <div id="div_error_id" class="error"></div>
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" onblur="comprobarCampo(this)">
+                <div id="div_error_name" class="error"></div>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" onblur="comprobarCampo(this)">
+                <div id="div_error_email" class="error"></div>
+            </div>
+            <div>
+                <label for="descripcion">Descripcion:</label>
+                <textarea name="descripcion" id="descripcion" onblur="comprobarCampo(this)"></textarea>
+                <div id="div_error_descripcion" class="error"></div>
+            </div>
+            <div>
+                <label for="file">File:</label>
+                <input type="text" id="file" onblur="comprobarCampo(this)">
+                <div id="div_error_file" class="error"></div>
             </div>
             <button id="submit_bottom" type="submit">Enviar</button>
         </form>
